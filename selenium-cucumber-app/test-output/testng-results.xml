@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-13T22:37:06 NZDT" name="Suite" finished-at="2022-11-13T22:37:42 NZDT" duration-ms="36068">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@13330ac6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-11-13T22:37:06 NZDT" name="Test" finished-at="2022-11-13T22:37:42 NZDT" duration-ms="36068">
+      <class name="runner.TestRunner">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2022-11-13T22:37:06 NZDT" name="beforeSuite" finished-at="2022-11-13T22:37:06 NZDT" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2022-11-13T22:37:06 NZDT" name="setUpClass" finished-at="2022-11-13T22:37:07 NZDT" duration-ms="431" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1fdf1c5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="initiate()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2022-11-13T22:37:07 NZDT" name="initiate" finished-at="2022-11-13T22:37:10 NZDT" duration-ms="3123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2022-11-13T22:37:10 NZDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-13T22:37:16 NZDT" duration-ms="5708" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify number of named cars in make dropdown"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify number of named cars in make dropdown"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="drawDown()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2022-11-13T22:37:16 NZDT" name="drawDown" finished-at="2022-11-13T22:37:16 NZDT" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drawDown -->
+        <test-method is-config="true" signature="initiate()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2022-11-13T22:37:16 NZDT" name="initiate" finished-at="2022-11-13T22:37:17 NZDT" duration-ms="1310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2022-11-13T22:37:17 NZDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-13T22:37:22 NZDT" duration-ms="4883" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify number of named cars in make dropdown"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify number of named cars in make dropdown"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="drawDown()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2022-11-13T22:37:22 NZDT" name="drawDown" finished-at="2022-11-13T22:37:22 NZDT" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drawDown -->
+        <test-method is-config="true" signature="initiate()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2022-11-13T22:37:22 NZDT" name="initiate" finished-at="2022-11-13T22:37:23 NZDT" duration-ms="1243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2022-11-13T22:37:23 NZDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-13T22:37:26 NZDT" duration-ms="2402" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify number of named cars through API call"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify number of named cars in make dropdown"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="drawDown()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2022-11-13T22:37:26 NZDT" name="drawDown" finished-at="2022-11-13T22:37:42 NZDT" duration-ms="16254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drawDown -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2022-11-13T22:37:42 NZDT" name="tearDownClass" finished-at="2022-11-13T22:37:42 NZDT" duration-ms="293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
