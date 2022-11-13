@@ -1,26 +1,19 @@
 package steps;
 
-import java.util.Collection;
-import java.util.List;
+
 import java.util.Properties;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.IClassListener;
-import org.testng.IInvokedMethodListener;
-import org.testng.ISuite;
-import org.testng.internal.IConfiguration;
-import org.testng.xml.XmlTest;
+
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import io.restassured.response.Response;
-import pages.carsPage;
-import pages.homePage;
 import runner.TestRunner;
 import utils.apiUtils;
+
 
 public class apiSteps extends TestRunner {
 
