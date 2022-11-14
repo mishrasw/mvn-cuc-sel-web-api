@@ -5,12 +5,11 @@
     <classes>
       <class name="runner.TestRunner">
         <methods>
-          <include name="setUpClass"/>
           <include name="beforeSuite"/>
-          <include name="drawDown"/>
+          <include name="setUpClass"/>
           <include name="runScenario" invocation-numbers="0"/>
+          <include name="drawDown"/>
           <include name="tearDownClass"/>
-          <include name="saveLogger"/>
           <include name="initiate"/>
         </methods>
       </class> <!-- runner.TestRunner -->

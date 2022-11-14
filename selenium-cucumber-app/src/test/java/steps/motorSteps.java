@@ -6,10 +6,10 @@ import java.io.IOException;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-
+import org.testng.Assert;
 
 import io.cucumber.java.en.Given;
-
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.carsPage;
 import pages.homePage;
@@ -33,6 +33,13 @@ public class motorSteps extends TestRunner {
 	   logger.info("Successfully navigate to car tab");
 	   cars.searchByMake(driver, make);
 	   logger.info("Successfully done search option ---> "+make);
+	}
+	@Then("^I verify number of named makes equal to (.*?)$")
+	public void i_navigate_to_motors_cars_tab(int itemsCount) {
+		home.navigateCarsPage(driver);
+		logger.info("Successfully navigate to car tab");
+		cars.verifyNumberOfNameMakes(driver, itemsCount);
+		logger.info("##### Test Pass ###### Number of Named Cars on UI ---> "+itemsCount);
 	}
 
 

@@ -77,7 +77,8 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 	
 	@AfterMethod(alwaysRun = true)  
     public void drawDown() {
-    	driver.close();   	 	
+    	//driver.close(); 
+    	driver.quit();
     }
 
     

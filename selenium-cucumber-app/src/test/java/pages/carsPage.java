@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class carsPage {
 protected WebDriver driver;
@@ -29,5 +30,13 @@ protected WebDriver driver;
 		System.out.println("Get text -----------> "+searchHeaderText.getText());
 		
 
+	}
+	
+	public void verifyNumberOfNameMakes(WebDriver driver, int expectedItems) {
+		this.driver = driver;
+		int actualCount = new Select(driver.findElement(makedropdown)).getOptions().size();
+		Assert.assertEquals(actualCount, expectedItems);
+
+		
 	}
 }

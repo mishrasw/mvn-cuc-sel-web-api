@@ -1,9 +1,16 @@
-#Author: TradeMe car search test scenarios
-Feature: Verify number of named cars in make dropdown
-and number of number of cars for each Make type
+Feature: Test Scenarios for TradeMe Web Application
 	
+	@smoke
+  Scenario Outline: Count number of Items in the named cars in the dropdown
+    Given I navigate to website and launch home page
+    Then I verify number of named makes equal to <items>
+
+   Examples:
+    |items		|
+    |79				|
+    
 @smoke
-  Scenario Outline: Verify number of named cars in make dropdown
+  Scenario Outline: Search for named cars in make dropdown
     Given I navigate to website and launch home page
     When I navigate to cars tab and search for <make>
 
@@ -11,12 +18,6 @@ and number of number of cars for each Make type
     |make		|
     |Ferrari|
     |BMW		|
+    |Mazda	|
+    |Honda	|
     
-@smoke
-  Scenario Outline: Verify number of named cars through API call
-    Given I am sending <RequestType> request to <EndPoint>
-    Then Verify number of named cars to equal <numberofNamedCars>
-    
-    Examples:
-    |RequestType|EndPoint									|numberofNamedCars|
-    |GET				|Categories/UsedCars.json	|78					 |
