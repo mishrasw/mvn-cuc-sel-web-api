@@ -23,7 +23,26 @@
 * Right CLick on Pom.Xml -> Run As -> **Maven Clean**
 * Right CLick on Pom.Xml -> Run As -> **Maven Install**
 
-#Reports
+# Reports
 
 * After Execution Extent report can be seen under below folder:  **<local_project_path>\mvn-cuc-sel-web-api\selenium-cucumber-app\test-output\SparkReporter**
+
+# Tools Used
+
+* Selenium - For UI Automation
+* Rest Assured - For REST API automation
+* Cucumber - For BDD
+* TestNG - For TDD 
+* Log4j - For logging
+* Extent Report - For HTML report
+
+# Best Practices Used 
+
+* BDD Approach - Managing Test Scenarios and Test Data in Gherkin style, more readable and easy to maintain
+* Page Object Model - For properly managing Objects and Methods at Page Level
+* Maven POM model - For easy integration with any CI tool and execute with mvn commands
+* Extent reporting - Easy HTML report showing BDD style report. Easy to share and publish with CI e.g. Jenkins, Azure etc.
+* Logging - To show live logging with build execution
+* Environment Properties - All environment properties saved in a separate file and read during run time
+
 
